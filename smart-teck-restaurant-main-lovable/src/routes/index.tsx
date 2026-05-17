@@ -1931,11 +1931,11 @@ function UserJourney() {
                 style={{
                   background: `linear-gradient(90deg, #3B82F6, #10B981, #8B5CF6, ${ACCENT})`,
                   boxShadow: `0 0 20px ${ACCENT}60`,
+                  transformOrigin: "left",
                 }}
                 initial={{ scaleX: 0 }}
                 animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
                 transition={{ duration: 2, ease: "easeOut" }}
-                style={{ transformOrigin: "left" }}
               />
 
               {/* Milestone Dots */}
